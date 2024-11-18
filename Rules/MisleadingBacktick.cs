@@ -72,7 +72,7 @@ namespace Microsoft.Windows.PowerShell.ScriptAnalyzer.BuiltinRules
         private List<CorrectionExtent> GetCorrectionExtent(IScriptExtent violationExtent)
         {
             var corrections = new List<CorrectionExtent>();
-            string description = "Remove trailing whilespace";
+            string description = "Remove trailing whitespace";
             corrections.Add(new CorrectionExtent(
                 violationExtent.StartLineNumber ,
                 violationExtent.EndLineNumber,
